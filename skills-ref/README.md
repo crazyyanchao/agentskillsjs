@@ -30,6 +30,50 @@ skills-ref read-properties path/to/skill
 skills-ref to-prompt path/to/skill-a path/to/skill-b
 ```
 
+```bash
+PS C:\Users\admin> npm install -g skills-ref
+
+added 4 packages in 2s
+PS C:\Users\admin> skills-ref --help
+Usage: cli [options] [command]
+
+Reference library for Agent Skills
+
+Options:
+  -V, --version                 output the version number
+  -h, --help                    display help for command
+
+Commands:
+  validate <skill_path>
+  read-properties <skill_path>
+  to-prompt <skill_paths...>
+  help [command]                display help for command
+PS C:\Users\admin> skills-ref validate F:\ai-project\skills\skills\algorithmic-art
+Valid skill: F:\ai-project\skills\skills\algorithmic-art
+PS C:\Users\admin>
+PS C:\Users\admin> skills-ref read-properties F:\ai-project\skills\skills\algorithmic-art
+{
+  "name": "algorithmic-art",
+  "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
+  "license": "Complete terms in LICENSE.txt"
+}
+PS C:\Users\admin> skills-ref to-prompt F:\ai-project\skills\skills\algorithmic-art
+<available_skills>
+<skill>
+<name>
+algorithmic-art
+</name>
+<description>
+Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists&#39; work to avoid copyright violations.
+</description>
+<location>
+F:\ai-project\skills\skills\algorithmic-art\SKILL.md
+</location>
+</skill>
+</available_skills>
+PS C:\Users\admin>
+```
+
 ### TypeScript API
 
 ```typescript

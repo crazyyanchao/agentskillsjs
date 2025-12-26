@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /** CLI for skills-ref library. */
 
 import { Command } from "commander";

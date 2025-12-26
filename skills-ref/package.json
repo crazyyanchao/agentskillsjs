@@ -1,7 +1,16 @@
 {
   "name": "skills-ref",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Reference library for Agent Skills",
+  "keywords": [
+    "agent",
+    "ai",
+    "claude",
+    "skills",
+    "reference",
+    "cli",
+    "anthropic"
+  ],
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -13,7 +22,7 @@
     }
   },
   "bin": {
-    "skills-ref": "./dist/cli.js"
+    "skills-ref": "./dist/skills-ref/cli.js"
   },
   "files": [
     "dist"
