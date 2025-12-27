@@ -2,8 +2,8 @@
 
 export { SkillError, ParseError, ValidationError } from "./errors.js";
 export { SkillProperties } from "./models.js";
-export { findSkillMd, readProperties } from "./parser.js";
+export { findSkillMd, readProperties, parseFrontmatter } from "./parser.js";
 export { toPrompt } from "./prompt.js";
-export { validate } from "./validator.js";
+export { validate, validateMetadata } from "./validator.js";
 
-export const version = "0.1.2";
+export const version = "0.1.5";
