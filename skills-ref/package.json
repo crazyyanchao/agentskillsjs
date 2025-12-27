@@ -1,6 +1,6 @@
 {
   "name": "skills-ref",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Reference library for Agent Skills",
   "keywords": [
     "agent",
@@ -22,7 +22,7 @@
     }
   },
   "bin": {
-    "skills-ref": "./dist/skills-ref/cli.js"
+    "skills-ref": "./dist/cli.js"
   },
   "files": [
     "dist"
